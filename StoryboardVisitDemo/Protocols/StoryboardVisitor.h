@@ -10,4 +10,7 @@
 
 @protocol StoryboardVisitor <NSObject>
 
+// - (void)performSegueWithIdentifier:(NSString *)identifier sender:(nullable id)sender
+-(void) prepareforSegue:(UIStoryboardSegue *)segue;
+
 @end

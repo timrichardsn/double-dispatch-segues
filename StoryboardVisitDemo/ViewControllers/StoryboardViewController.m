@@ -14,11 +14,8 @@
 
 @implementation StoryboardViewController
 
-// implement the visitor
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"prepare for segue...");
-    // this will still perform the segue, but we need to ask the view controller coming in to prepare itself
+    [self.visitor prepareforSegue:segue];
 }
 
 @end
