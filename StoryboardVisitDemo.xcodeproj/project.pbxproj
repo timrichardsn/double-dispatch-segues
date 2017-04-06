@@ -13,6 +13,7 @@
 		22DD95B11E9671E000B6AA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD95AF1E9671E000B6AA1D /* Main.storyboard */; };
 		22DD95B31E9671E000B6AA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DD95B21E9671E000B6AA1D /* Assets.xcassets */; };
 		22DD95B61E9671E000B6AA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD95B41E9671E000B6AA1D /* LaunchScreen.storyboard */; };
+		22DD95C31E96740F00B6AA1D /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD95C21E96740F00B6AA1D /* StoryboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		22DD95B21E9671E000B6AA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22DD95B51E9671E000B6AA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22DD95B71E9671E000B6AA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DD95C11E96740F00B6AA1D /* StoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
+		22DD95C21E96740F00B6AA1D /* StoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
+		22DD95C51E96765600B6AA1D /* StoryboardVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardVisitor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		22DD95A51E9671E000B6AA1D /* StoryboardVisitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				22DD95C41E9675D900B6AA1D /* Protocols */,
 				22DD95A91E9671E000B6AA1D /* AppDelegate.h */,
 				22DD95AA1E9671E000B6AA1D /* AppDelegate.m */,
 				22DD95AC1E9671E000B6AA1D /* ViewController.h */,
@@ -67,6 +72,7 @@
 				22DD95B41E9671E000B6AA1D /* LaunchScreen.storyboard */,
 				22DD95B71E9671E000B6AA1D /* Info.plist */,
 				22DD95A61E9671E000B6AA1D /* Supporting Files */,
+				22DD95C01E9673BF00B6AA1D /* ViewControllers */,
 			);
 			path = StoryboardVisitDemo;
 			sourceTree = "<group>";
@@ -77,6 +83,23 @@
 				22DD95A71E9671E000B6AA1D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22DD95C01E9673BF00B6AA1D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22DD95C11E96740F00B6AA1D /* StoryboardViewController.h */,
+				22DD95C21E96740F00B6AA1D /* StoryboardViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22DD95C41E9675D900B6AA1D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				22DD95C51E96765600B6AA1D /* StoryboardVisitor.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,8 +133,7 @@
 				TargetAttributes = {
 					22DD95A21E9671E000B6AA1D = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = GCQUCMX2H6;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -152,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22DD95AE1E9671E000B6AA1D /* ViewController.m in Sources */,
+				22DD95C31E96740F00B6AA1D /* StoryboardViewController.m in Sources */,
 				22DD95AB1E9671E000B6AA1D /* AppDelegate.m in Sources */,
 				22DD95A81E9671E000B6AA1D /* main.m in Sources */,
 			);
@@ -273,11 +296,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GCQUCMX2H6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StoryboardVisitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trco.StoryboardVisitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -285,11 +309,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GCQUCMX2H6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StoryboardVisitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trco.StoryboardVisitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
