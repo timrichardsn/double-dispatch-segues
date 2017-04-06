@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeController.h
 //  StoryboardVisitDemo
 //
 //  Created by Tim Richardson on 06/04/2017.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "StoryboardViewController.h"
+//#import "StoryboardViewController.m"
+//#import "VisitableController.h"
 
-@interface ViewController : UIViewController
+@interface HomeController : UIViewController
 @end
-

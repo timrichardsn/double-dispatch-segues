@@ -14,8 +14,8 @@
 
 @implementation StoryboardViewController
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    [self.visitor prepareforSegue:segue];
-}
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    [self.visitor prepareForSegue:segue];
+//}
 
 @end

@@ -1,16 +1,16 @@
 //
-//  StoryboardViewController.h
+//  VisitableController.h
 //  StoryboardVisitDemo
 //
 //  Created by Tim Richardson on 06/04/2017.
 //  Copyright © 2017 TRCO. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 //#import "StoryboardVisitor.h"
 
-@interface StoryboardViewController : UIViewController
+@protocol VisitableController <NSObject>
 
-//@property (nonatomic) StoryboardVisitor *visitor;
+//-(void) accept:(StoryboardVisitor *)visitor;
 
 @end

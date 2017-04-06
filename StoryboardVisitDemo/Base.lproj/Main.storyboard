@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="-462" y="-795"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="NSz-8k-wgM">
             <objects>
-                <viewController id="iax-vG-gS4" sceneMemberID="viewController">
+                <viewController title="Home" id="iax-vG-gS4" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gLA-uA-3Z6"/>
                         <viewControllerLayoutGuide type="bottom" id="arS-fO-jqR"/>

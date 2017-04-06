@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
 
-@protocol StoryboardVisitor <NSObject>
+@interface StoryboardVisitor : NSObject
 
-// - (void)performSegueWithIdentifier:(NSString *)identifier sender:(nullable id)sender
--(void) prepareforSegue:(UIStoryboardSegue *)segue;
+//-(void) prepareForSegue:(UIStoryboardSegue *)segue;
 
 @end
