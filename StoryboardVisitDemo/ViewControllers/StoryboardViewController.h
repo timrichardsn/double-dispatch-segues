@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "StoryboardVisitor.h"
+#import "StoryboardVisitor.h"
 
 @interface StoryboardViewController : UIViewController
 
-//@property (nonatomic) StoryboardVisitor *visitor;
+@property (nonatomic) id<StoryboardVisitor> visitor;
 
 @end

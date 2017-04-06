@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "StoryboardViewController.m"
-//#import "VisitableController.h"
+#import "StoryboardViewController.h"
+#import "VisitableController.h"
 
-@interface HomeController : UIViewController
+@interface HomeController : StoryboardViewController <VisitableController>
 @end

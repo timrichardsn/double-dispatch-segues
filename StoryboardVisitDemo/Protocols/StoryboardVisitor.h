@@ -1,5 +1,5 @@
 //
-//  VisitableController.h
+//  StoryboardVisitor.h
 //  StoryboardVisitDemo
 //
 //  Created by Tim Richardson on 06/04/2017.
@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "StoryboardVisitor.h"
 
-@protocol VisitableController <NSObject>
+@class StoryboardViewController;
 
--(void) accept:(id<StoryboardVisitor>)visitor;
+@protocol StoryboardVisitor <NSObject>
+
+-(void) visit:(StoryboardViewController *)controller;
 
 @end

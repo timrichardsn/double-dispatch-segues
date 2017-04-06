@@ -7,6 +7,7 @@
 //
 
 #import "StoryboardViewController.h"
+#import "VisitableController.h"
 
 @interface StoryboardViewController ()
 
@@ -14,8 +15,10 @@
 
 @implementation StoryboardViewController
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    [self.visitor prepareForSegue:segue];
-//}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // why call visitor at all?
+    UIViewController<VisitableController> *visitableController = (UIViewController<VisitableController> *) segue.destinationViewController;
+    [visitableController accept:self.visitor];
+}
 
 @end

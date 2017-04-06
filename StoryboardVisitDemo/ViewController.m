@@ -7,11 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "ViewControllerVisitor.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.visitor = [[ViewControllerVisitor alloc] init];
+}
 
 @end

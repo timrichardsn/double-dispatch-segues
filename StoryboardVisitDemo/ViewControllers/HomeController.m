@@ -14,19 +14,8 @@
 
 @implementation HomeController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)accept:(id<StoryboardVisitor>)visitor {
+    [visitor visit:self];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-//-(void)accept:(StoryboardVisitor *)visitor {
-//    NSLog(@"Accept visitor in Home");
-//    // extension on StoryboardVisitor: 18:33
-//}
 
 @end

@@ -1,5 +1,5 @@
 //
-//  StoryboardVisitor.h
+//  ViewControllerVisitor.h
 //  StoryboardVisitDemo
 //
 //  Created by Tim Richardson on 06/04/2017.
@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <UIKit/UIKit.h>
+#import "StoryboardVisitor.h"
 
-@interface StoryboardVisitor : NSObject
-
-//-(void) prepareForSegue:(UIStoryboardSegue *)segue;
+@interface ViewControllerVisitor : NSObject <StoryboardVisitor>
 
 @end
